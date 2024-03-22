@@ -1,1 +1,7 @@
-# lab_12_deque
+# LAB 12: Deque
+
+**Name:**
+
+**Period:**
+
+**Email:**
