@@ -15,66 +15,11 @@ In your Driver, you must create the objects like this:
     MyDeque<String> deque = new MyDeque<String>(10);
 ```
 
-
-```
-    public class MyDeque<E>{
-      // Instance variables
-      private E[] data;
-      private int size;
-      private int start, end;
-
-      // Constructors
-      public MyDeque(){ 
-        data = (E[])new Object[ENTER_CAPACITY_HERE];
-        size = 0;
-        start = 0;
-        end = 0;
-      }
-  
-      public MyDeque(int initialCapacity){ 
-         data = (E[])new Object[ENTER_CAPACITY_HERE];
-         size = 0;
-         start = 0;
-         end = 0;
-      }
-      
-      // Add a new value on the indicated side
-      public void addFirst(E element){ }
-      public void addLast(E element){ }
-      
-      // Remove and return the element
-      public E removeFirst(){ }
-      public E removeLast(){ }
-      
-      // Return the element. Do not deleter elements.
-      public E getFirst(){ }
-      public E getLast(){ }
-      
-      // Return deque size
-      public int size(){ }
-      
-      // Getters
-  
-      // Return data
-      public E[] getData(){ }
-      // Return start
-      public int getStart(){ }
-      // Return end
-      public int getEnd(){ }
-      
-      // Resize the array. Double its length (data.length * 2)
-      private void resize() {}
-      
-      // Return the deque as string. Ex.:  "[hello, my, dear, friends!]"
-      public String toString(){ }
-    }
-```
-
 Using a generic array requires that you create an array of Object, and then cast it to E. This causes a warning. Please use the following code to avoid that issue:
 ```
     public class MyDeque(){
       @SuppressWarnings("unchecked")
+      E[] d = (E[])new Object[10];
+      data = d;
     }
 ```
-
-  
