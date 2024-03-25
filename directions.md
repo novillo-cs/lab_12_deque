@@ -1,13 +1,11 @@
-### Directions to implement your Deque
+### Directions to implement your ArrayDeque
 
-- You must implement a generic Deque
-- The Deque size is the number of elements in the structure
-- The Deque capacity is the number of elements your arrayDeque can hold before
-resize the array
-- All methods should have a complexity of 0(1), except the toString()
-- If your have this Deque ["hello", "my", "dear", "friends!"], the left element (hello) is the start, while the right element (friends!) is the end.
-- Resize the array when you try to add an element to any side side and the array is at capacity. The resize method should double the capacity of the deque and copy the values in the deque over in the correct order.
-- Throw an exception NoSuchElementException in methods remove and get methods in deque is empty.
+- You must implement a generic ArrayDeque.
+- The ArrayDeque size is the number of elements in the structure.
+- The ArrayDeque capacity is the number of elements your ArrayDeque can hold before resize the array.
+- All methods should have a complexity of 0(1), except toString() and resize().
+- Resize the array when you try to add an element to any side and the array is at capacity. The resize method should double the capacity of the ArrayDeque and copy the values in the ArrayDeque over in the correct order.
+- Throw an exception NoSuchElementException in the remove and get methods if ArrayDeque is empty.
 - Throw an exception NullPointerException in methods add if the element you are trying to add is null.
 
 In your Driver, you must create the objects like this:
