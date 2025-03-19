@@ -27,7 +27,7 @@
       public E removeFirst(){ }
       public E removeLast(){ }
       
-      // Return the element. Do not deleter elements.
+      // Return the element. Do not delete elements.
       public E getFirst(){ }
       public E getLast(){ }
       
