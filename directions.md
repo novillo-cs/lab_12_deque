@@ -17,8 +17,8 @@ In your Driver, you must create the objects like this:
 
 Using a generic array requires that you create an array of Object, and then cast it to E. This causes a warning. Please use the following code to avoid that issue:
 ```
+    @SuppressWarnings("unchecked")
     public class MyDeque(){
-      @SuppressWarnings("unchecked")
       E[] d = (E[])new Object[10];
       data = d;
     }
