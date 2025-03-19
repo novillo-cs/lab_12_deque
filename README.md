@@ -1,4 +1,4 @@
-# LAB 12: Deque
+# LAB 13: Deque
 
 **Name:**
 
